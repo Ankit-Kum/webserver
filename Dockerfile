@@ -2,6 +2,9 @@ FROM centos:latest
 
 RUN yum -y install python3 
 RUN pip3 install flask
+RUN yum -y install git
+
+RUN git clone https://github.com/Ankit-Kum/webserver.git
 
 WORKDIR /webserver
 
